@@ -41,8 +41,9 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.acf.star_name}</h1>
+        <iframe width="560" height="315" src={`https://www.youtube.com/embed/${postData.acf.anthem}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div className={utilStyles.lightText}>
-          <p>GDP: {postData.acf.GDP}</p>
+          <p>GDP: {postData.acf.gdp}</p>
           <h2>Alpha fleet:</h2>
           <p>{postData.acf.alpha_fleet}</p>
         </div>
